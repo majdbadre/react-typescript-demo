@@ -2,12 +2,11 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
-import { TodoContextProvider } from "./components/TodoList/TodoContext.tsx";
-
+import { ExpenseProvider } from "./components/expenses/ExpenseContext.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <TodoContextProvider>
+    <ExpenseProvider>
       <App />
-    </TodoContextProvider>
+    </ExpenseProvider>
   </StrictMode>
 );
