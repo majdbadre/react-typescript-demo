@@ -5,10 +5,10 @@ type InputProps = {
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-const Input = (props: InputProps) => {
+const Input = ({ value, handleChange }: InputProps) => {
   return (
     <div>
-      <input type="text" onChange={props.handleChange} value={props.value} />
+      <input type="text" onChange={handleChange} value={value} />
     </div>
   );
 };
